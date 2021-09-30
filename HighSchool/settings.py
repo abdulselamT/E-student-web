@@ -25,7 +25,7 @@ SECRET_KEY = '9#n@w4mmk#rusyx$tb3als0w-k@u1a#gu@n5515o4)39b-bq*v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['highstu.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['highstu.herokuapp.com','127.0.0.1', 'e-student-highschool.herokuapp.com']
 
 # Application definition
 
