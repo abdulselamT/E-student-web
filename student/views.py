@@ -828,3 +828,38 @@ def registerstus():
 					y.finished=False
 					y.save()
 
+
+					
+					
+					
+@login_required(login_url='login')
+def changepassword(request):
+	if request.method=='POST':
+		passw1=request.POST.get('passw1')
+		passw2=request.POST.get('passw2')
+		if passw1 != passw2 or len(passw1)<4:
+			return HttpResponse('two passwords didnot match or lessthan 4 characters')
+		x=request.user
+		x.set_password(passw1)
+		x.save()
+		return redirect('/')
+	return render(request,'student/passchange.html',{})					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				
