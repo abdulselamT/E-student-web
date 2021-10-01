@@ -109,16 +109,17 @@
 		
 		<li><img class='im' src="{% static 'images/enroll.png' %}"> <a href="">Enrollment Record</a></li>
 		<li><img class='im' src="{% static 'images/acad.png' %}" ><a href="{% url 'assesmentresult' %}">Assesment_history</a></li>
+		<li><a href="{% url 'passch' %}">changepassword</a></li>
 		<li><button onclick="seeme()">Accadamics</button></li>
 		<div id="acad">
 		<li><a href="{% url 'transfer' %}">register</a></li>
-		<li><a href="">Curriculum</a></li>
+			
 		<li><a href="">Payment</a></li>
 		</div>
 		<li><button onclick="req()">REquest</button></li>
 			<div id="req">
 			
-				<li><a href="">Complaint Results</a></li>
+			
 				<li><a href="">Course Exemption</a></li>
 		</div>
 		<li><a href="">Temporary ID</a></li>
